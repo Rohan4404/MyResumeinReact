@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+
+@media print {
+  @page {
+    margin: 20mm; /* controls page margin (top gap on ALL pages) */
+  }
+
+  .resume-container {
+    padding-top: 0;
+  }
+
+  /* Force spacing for content that breaks */
+  .page-break {
+    page-break-before: always;
+    margin-top: 20mm; /* 👈 gap for next page */
+  }
+}

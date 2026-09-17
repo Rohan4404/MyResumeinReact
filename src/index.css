@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  body {
+    margin: 0;
+  }
+} */
+@page {
+  margin-top: 10mm;
+  margin-bottom: 10mm;
+}
+
+.resume-container {
+  padding-top: 0;
+}
+
+/* Force spacing for content that breaks */
+/* .page-break {
+  page-break-before: always;
+  margin-top: 20mm; 
+} */
